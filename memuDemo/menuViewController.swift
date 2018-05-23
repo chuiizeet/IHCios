@@ -15,9 +15,11 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     var ManuNameArray:Array = [String]()
     var iconArray:Array = [UIImage]()
+    var segueIdentifiers:Array = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         ManuNameArray = ["Materias","Perfil","Salir","Setting"]
+        segueIdentifiers = ["x","d","lol","Login"]
         iconArray = [UIImage(named:"notebook")!,UIImage(named:"users")!,UIImage(named:"exit")!,UIImage(named:"setting")!]
         
         imgProfile.layer.borderWidth = 2
@@ -75,6 +77,12 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if cell.lblMenuname.text! == "Salir"
         {
             print("Map Tapped")
+            
+            performSegue(withIdentifier: "Login", sender: nil)
+            
+            
+            
+            
         }
         if cell.lblMenuname.text! == "Setting"
         {
