@@ -17,12 +17,12 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var iconArray:Array = [UIImage]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Home","Message","Map","Setting"]
-        iconArray = [UIImage(named:"home")!,UIImage(named:"message")!,UIImage(named:"map")!,UIImage(named:"setting")!]
+        ManuNameArray = ["Materias","Perfil","Salir","Setting"]
+        iconArray = [UIImage(named:"notebook")!,UIImage(named:"users")!,UIImage(named:"exit")!,UIImage(named:"setting")!]
         
         imgProfile.layer.borderWidth = 2
-        imgProfile.layer.borderColor = UIColor.green.cgColor
-        imgProfile.layer.cornerRadius = 50
+        imgProfile.layer.borderColor = UIColor.red.cgColor
+        imgProfile.layer.cornerRadius = 20
         
         imgProfile.layer.masksToBounds = false
         imgProfile.clipsToBounds = true 
@@ -52,7 +52,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         let cell:MenuCell = tableView.cellForRow(at: indexPath) as! MenuCell
         print(cell.lblMenuname.text!)
-        if cell.lblMenuname.text! == "Home"
+        if cell.lblMenuname.text! == "Materias"
         {
             print("Home Tapped")
             let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -62,7 +62,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
             
         }
-        if cell.lblMenuname.text! == "Message"
+        if cell.lblMenuname.text! == "Perfil"
         {
             print("message Tapped")
            
@@ -72,7 +72,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             revealviewcontroller.pushFrontViewController(newFrontController, animated: true)
         }
-        if cell.lblMenuname.text! == "Map"
+        if cell.lblMenuname.text! == "Salir"
         {
             print("Map Tapped")
         }
