@@ -1,2 +1,6 @@
-# lift-side-memu-in-swift-3
-Lift Slide Out Menu (Swift 3 in Xcode 8 : SWRevealViewController)
+# IHC - Edukt IOS
+===
+---
+Jesus Lorenzo Guerra Cisneros **1604589**
+
+---
