@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var btnMenuButton: UIBarButtonItem!
+    
+    
+    let algebraExamen = "AlgebraExamen"
+    let algebraTarea = "AlgebraTarea"
+    let quimicaExamen = "QuimicaExamen"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,21 +25,65 @@ class ViewController: UIViewController {
             btnMenuButton.target = revealViewController()
             btnMenuButton.action = "revealToggle:"
             
-//            revealViewController().rightViewRevealWidth = 150
-//            extraButton.target = revealViewController()
-//            extraButton.action = "rightRevealToggle:"
-            
-      
+
             
             
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func materialDeApoyoTareas(_ sender: Any) {
+        
+        if let url = Bundle.main.url(forResource: algebraTarea, withExtension: "pdf")
+        {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = "Tarea de algebra"
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+        }
+        
     }
-
-
+    
+    
+    @IBAction func examenAlgebra(_ sender: Any) {
+        
+        
+        if let url = Bundle.main.url(forResource: algebraExamen, withExtension: "pdf")
+        {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = "Examen de algebra"
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+        }
+        
+    }
+    
+    
+    @IBAction func examenQuimica(_ sender: Any) {
+        
+        
+        if let url = Bundle.main.url(forResource: quimicaExamen, withExtension: "pdf")
+        {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = "Examen de Química"
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+        }
+        
+    }
+    
+    
 }
 

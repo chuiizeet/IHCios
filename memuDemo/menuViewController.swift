@@ -9,6 +9,8 @@
 import UIKit
 
 class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+
 
     @IBOutlet weak var tblTableView: UITableView!
     @IBOutlet weak var imgProfile: UIImageView!
@@ -18,7 +20,7 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var segueIdentifiers:Array = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        ManuNameArray = ["Materias","Perfil","Salir","Setting"]
+        ManuNameArray = ["Materias","Perfil","Salir","Edukt v1.0"]
         segueIdentifiers = ["x","d","lol","Login"]
         iconArray = [UIImage(named:"notebook")!,UIImage(named:"users")!,UIImage(named:"exit")!,UIImage(named:"setting")!]
         
@@ -84,9 +86,17 @@ class menuViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             
             
         }
-        if cell.lblMenuname.text! == "Setting"
+        if cell.lblMenuname.text! == "Edukt v1.0"
         {
            print("setting Tapped")
+            
+            let alterView = UIAlertController(title: "Edukt v1.0", message: "Esta aplicacion fue hecha como proyecto para la materia y laboratorio de IHC", preferredStyle: .alert)
+            
+            let okay = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+            
+            alterView.addAction(okay)
+            
+            present(alterView, animated: true, completion: nil)
         }
     }
     /*

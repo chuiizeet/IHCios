@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		88C6C97520B54E8700C4B1BC /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6C97420B54E8700C4B1BC /* LoginController.swift */; };
+		88C6C97920B62C1300C4B1BC /* AlgebraTarea.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88C6C97620B62C1200C4B1BC /* AlgebraTarea.pdf */; };
+		88C6C97A20B62C1300C4B1BC /* QuimicaExamen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88C6C97720B62C1200C4B1BC /* QuimicaExamen.pdf */; };
+		88C6C97B20B62C1300C4B1BC /* AlgebraExamen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88C6C97820B62C1300C4B1BC /* AlgebraExamen.pdf */; };
+		88C6C97D20B6305C00C4B1BC /* acerdaDeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C6C97C20B6305C00C4B1BC /* acerdaDeController.swift */; };
 		B222F1E81DAA30330089573D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F1E71DAA30330089573D /* AppDelegate.swift */; };
 		B222F1EA1DAA30330089573D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B222F1E91DAA30330089573D /* ViewController.swift */; };
 		B222F1ED1DAA30330089573D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B222F1EB1DAA30330089573D /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		88C6C97420B54E8700C4B1BC /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		88C6C97620B62C1200C4B1BC /* AlgebraTarea.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AlgebraTarea.pdf; sourceTree = "<group>"; };
+		88C6C97720B62C1200C4B1BC /* QuimicaExamen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = QuimicaExamen.pdf; sourceTree = "<group>"; };
+		88C6C97820B62C1300C4B1BC /* AlgebraExamen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = AlgebraExamen.pdf; sourceTree = "<group>"; };
+		88C6C97C20B6305C00C4B1BC /* acerdaDeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acerdaDeController.swift; sourceTree = "<group>"; };
 		B222F1E41DAA30330089573D /* memuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B222F1E71DAA30330089573D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B222F1E91DAA30330089573D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +117,9 @@
 		B222F1E61DAA30330089573D /* memuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				88C6C97820B62C1300C4B1BC /* AlgebraExamen.pdf */,
+				88C6C97620B62C1200C4B1BC /* AlgebraTarea.pdf */,
+				88C6C97720B62C1200C4B1BC /* QuimicaExamen.pdf */,
 				B222F1E71DAA30330089573D /* AppDelegate.swift */,
 				B222F1E91DAA30330089573D /* ViewController.swift */,
 				B222F2161DAA33DA0089573D /* SWRevealViewController.h */,
@@ -122,6 +133,7 @@
 				B222F2151DAA33D90089573D /* memuDemo-Bridging-Header.h */,
 				B222F2191DAA354D0089573D /* menuViewController.swift */,
 				88C6C97420B54E8700C4B1BC /* LoginController.swift */,
+				88C6C97C20B6305C00C4B1BC /* acerdaDeController.swift */,
 			);
 			path = memuDemo;
 			sourceTree = "<group>";
@@ -254,8 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B222F1F21DAA30330089573D /* LaunchScreen.storyboard in Resources */,
+				88C6C97B20B62C1300C4B1BC /* AlgebraExamen.pdf in Resources */,
 				B222F1EF1DAA30330089573D /* Assets.xcassets in Resources */,
 				B222F1ED1DAA30330089573D /* Main.storyboard in Resources */,
+				88C6C97A20B62C1300C4B1BC /* QuimicaExamen.pdf in Resources */,
+				88C6C97920B62C1300C4B1BC /* AlgebraTarea.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C6C97D20B6305C00C4B1BC /* acerdaDeController.swift in Sources */,
 				B222F1EA1DAA30330089573D /* ViewController.swift in Sources */,
 				B222F21C1DAA36070089573D /* MenuCell.swift in Sources */,
 				B222F1E81DAA30330089573D /* AppDelegate.swift in Sources */,
